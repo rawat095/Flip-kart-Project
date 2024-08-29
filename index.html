@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping India | Buy Mobiles Electronic, Appliances Clothing and Games</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/logo2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Dancing+Script:wght@600&family=Edu+SA+Beginner&family=Lato:ital,wght@1,700&family=Lexend+Deca:wght@300&family=Mooli&family=Mukta:wght@500&family=Noto+Sans:wght@600&family=Open+Sans:wght@500&family=PT+Serif:wght@700&family=Pacifico&family=Poppins:ital,wght@0,100;0,300;0,500;1,300&family=Raleway:wght@200&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300;400;500&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3943ff319c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- nav-section  -->
+        <nav>
+            <div class="nav-bar">
+                <div class="logo-div">
+                    <img class="logo" src="./image/flip1.png" alt>
+                    <div class="plus-content">
+                        <span> <a class="explore" href>Explore </a><span> <a class="plus" href>Plus</a>
+                            </span></span>
+                        <img class="gold-plus-img" src="./assets (2)/asset 1.png" alt>
+                    </div>
+
+                </div>
+
+                <input class="search" type="text" placeholder="Search for Product, Brands and More">
+                <button title="select" type="button" class="search-btn">
+                    <div class="icon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxNyAxOCIgY2xhc3M9IiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjMjg3NEYxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGNsYXNzPSJfMzRSTnBoIiBkPSJtMTEuNjE4IDkuODk3bDQuMjI1IDQuMjEyYy4wOTIuMDkyLjEwMS4yMzIuMDIuMzEzbC0xLjQ2NSAxLjQ2Yy0uMDgxLjA4MS0uMjIxLjA3Mi0uMzE0LS4wMmwtNC4yMTYtNC4yMDMiLz48cGF0aCBjbGFzcz0iXzM0Uk5waCIgZD0ibTYuNDg2IDEwLjkwMWMtMi40MiAwLTQuMzgxLTEuOTU2LTQuMzgxLTQuMzY4IDAtMi40MTMgMS45NjEtNC4zNjkgNC4zODEtNC4zNjkgMi40MiAwIDQuMzgxIDEuOTU2IDQuMzgxIDQuMzY5IDAgMi40MTMtMS45NjEgNC4zNjgtNC4zODEgNC4zNjhtMC0xMC44MzVjLTMuNTgyIDAtNi40ODYgMi44OTUtNi40ODYgNi40NjcgMCAzLjU3MiAyLjkwNCA2LjQ2NyA2LjQ4NiA2LjQ2NyAzLjU4MiAwIDYuNDg2LTIuODk1IDYuNDg2LTYuNDY3IDAtMy41NzItMi45MDQtNi40NjctNi40ODYtNi40NjciLz48L2c+PC9zdmc+"
+                            alt />
+                    </div>
+                </button>
+                <button title="hover" type="reset" class="login-btn">
+                    <a class="login" target="_blank" href="login.html">Login</a>
+                </button>
+                <a href="#" class="seller">Become a Seller</a>
+                <a href="#" class="more">More</a>
+                <div class="cart">
+                    <a href="#" id="cart" target="_blank">Cart</a>
+                    <img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iVjNDNWJPIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBjbGFzcz0iXzFiUzlpYyIgZD0iTTE1LjMyIDIuNDA1SDQuODg3QzMgMi40MDUgMi40Ni44MDUgMi40Ni44MDVMMi4yNTcuMjFDMi4yMDguMDg1IDIuMDgzIDAgMS45NDYgMEguMzM2Qy4xIDAtLjA2NC4yNC4wMjQuNDZsLjY0NCAxLjk0NUwzLjExIDkuNzY3Yy4wNDcuMTM3LjE3NS4yMy4zMi4yM2g4LjQxOGwtLjQ5MyAxLjk1OEgzLjc2OGwuMDAyLjAwM2MtLjAxNyAwLS4wMzMtLjAwMy0uMDUtLjAwMy0xLjA2IDAtMS45Mi44Ni0xLjkyIDEuOTJzLjg2IDEuOTIgMS45MiAxLjkyYy45OSAwIDEuODA1LS43NSAxLjkxLTEuNzEybDUuNTUuMDc2Yy4xMi45MjIuOTEgMS42MzYgMS44NjcgMS42MzYgMS4wNCAwIDEuODg1LS44NDQgMS44ODUtMS44ODUgMC0uODY2LS41ODQtMS41OTMtMS4zOC0xLjgxNGwyLjQyMy04LjgzMmMuMTItLjQzMy0uMjA2LS44Ni0uNjU1LS44NiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
+                        alt>
+
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- category section  -->
+
+        <section class="category-section">
+            <div class="categories">
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/022cf9a62e8bd22c.png?q=100" alt>
+                    <span class="category-items">Grocery</span>
+                </div>
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/64f1cc66052c66ef.png?q=100" alt>
+                    <span class="category-items">Mobiles& Tablet</span>
+                </div>
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/6dbed7ba5417672f.jpg?q=100" alt>
+                    <span class="category-items">Fashion</span>
+                </div>
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/1fd83847b32a09d1.png?q=100" alt>
+                    <span class="category-items">Electronics</span>
+                </div>
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/f9c7aaa5f5455ae7.png?q=100" alt>
+                    <span class="category-items">Home& Kitchen</span>
+                </div>
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/6c0716819ac55121.png?q=100" alt>
+                    <span class="category-items">Tv& Appliances</span>
+                </div>
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/8abe0a348a71d745.png?q=100" alt>
+                    <span class="category-items">Travel</span>
+                </div>
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/c444de48eb75d450.png?q=100" alt>
+                    <span class="category-items">Beauty, Toys and
+                        More</span>
+                </div>
+                <div class="categories-img">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/26e11f4698473e49.png?q=100" alt>
+                    <span class="category-items">Furniture</span>
+                </div>
+
+            </div>
+        </section>
+        <main>
+            <section class="main-section">
+
+                <div id="slider">
+                    <button title="view" type="submit" class="left-arrow">
+                        <svg stroke="#000000" xmlns="http://www.w3.org/2000/svg" width="24" height="27">
+                            <path
+                                d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" />
+                        </svg>
+                    </button>
+                    <button title="New" type="button" class="right-arrow">
+                        <svg stroke="#000000" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                        </svg>
+                    </button>
+                    <figure>
+                        <img src="https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/3959ad9f670aeeeb.jpg?q=50" alt="Loading.....">
+                        <img src="https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/e7498969477bb9cd.jpg?q=50" alt="Loading.....">
+                        <img src="https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/9713a8a3d85b97b0.jpg?q=50" alt>
+
+                    </figure>
+                </div>
+
+                <section class="ads-section1">
+                    <div>
+                        <!-- left side  -->
+                        <div class="left-side">
+                            <p class="left-para">Best of Electronics</p>
+                            <button class="left-btn">VIEW ALL</button>
+                            <div class="left-img">
+                                <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90" alt width="230px">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- middle  -->
+                    <div class="middle">
+                        <div class="items">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70" alt width="200px" height="154px">
+                            <span class="items-name">Printers</span>
+                            <span class="price">From ₹3999</span>
+                            <span class="brand">HP</span>
+                        </div>
+                        <div class="items">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70" alt width="200px" height="150px">
+                            <span class="items-name">Projector</span>
+                            <span class="price">From ₹6990</span>
+                            <span class="brand">EPSON</span>
+                        </div>
+                        <div class="items">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70" alt width="200px" height="154px">
+                            <span class="items-name">Camera</span>
+                            <span class="price">From ₹30000</span>
+                            <span class="brand">Canon, Nikon...</span>
+                        </div>
+                        <div class="items">
+                            <img class="image" src="https://rukminim2.flixcart.com/flap/200/200/image/20c224cd52ae7a87.jpg?q=70" alt width="200px" height="154px">
+                            <span class="items-name">Trimmer</span>
+                            <span class="price">From ₹399</span>
+                            <span class="brand">Redmi, Phillips...</span>
+                        </div>
+                        <div class="items">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/xif0q/monitor/v/i/j/-original-imagn6h2gfmkm774.jpeg?q=70" alt width="200px" height="148px">
+                            <span class="items-name">Monitor</span>
+                            <span class="price">From ₹9999</span>
+                            <span class="brand">Samsung, LG...</span>
+                        </div>
+
+                    </div>
+                    <!-- right part  -->
+                    <div class="right-part">
+                        <img src="https://rukminim2.flixcart.com/fk-p-flap/464/708/image/d89b027cc5cc2599.jpg?q=70" alt width="230px" height="353xp">
+                    </div>
+                </section>
+
+                <!-- ads section 2 -->
+                <section class="ads-section2">
+                    <!-- left box -->
+                    <div class="left-side2">
+                        <p class="left-para">Beauty, Food, Toy& More </p>
+                        <button class="left-btn">VIEW ALL</button>
+                        <div class="left-img">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90" alt width="230px">
+                        </div>
+
+                    </div>
+                    <div class="middle-2">
+                        <button title="New Nation" class="right-arrow-2">
+                            <svg stroke="#000000" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg>
+                        </button>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=70" alt width="195px" height="200px">
+                            <span class="items-name">Electric Cycle</span>
+                            <span class="price">Up to 40% Off</span>
+                            <span class="brand">Nuze Motovolt and
+                                more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=70" alt width="197px" height="200px">
+                            <span class="items-name">Top Selling
+                                Stationery</span>
+                            <span class="price">From ₹49</span>
+                            <span class="brand">Pens, Notebook& more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=70" alt width="200px" height="186px">
+                            <span class="items-name">Remote Control
+                                Toys</span>
+                            <span class="price">Up to 80% Off </span>
+                            <span class="brand">Buy Now!</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=70" alt width="157px" height="200px">
+                            <span class="items-name">Tricycles&
+                                Rideons</span>
+                            <span class="price">Up to 70% Off</span>
+                            <span class="brand">Figurines, Battle Toys &
+                                more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kz5vwy80/helmet/o/4/k/-original-imagb8azfdthjhqr.jpeg?q=70" alt width="200px" height="200px">
+                            <span class="items-name">Rider Helmet</span>
+                            <span class="price">From ₹699</span>
+                            <span class="brand">Vega, Steelbird HRX&
+                                more</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- ads section 3 -->
+                <section class="ads-section2">
+                    <!-- left box -->
+                    <div class="left-side2">
+                        <p class="left-para">Gifts for Your Loved Ones</p>
+                        <button class="left-btn">VIEW ALL</button>
+
+                    </div>
+                    <div class="middle-2">
+                        <button title="middle" class="right-arrow-2">
+                            <svg stroke="#000000" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg>
+                        </button>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kqwobrk0/headphone/3/n/b/bassheads-100-boat-original-imag4tgdrpxfh3pk.jpeg?q=70" alt width="195px" height="200px">
+                            <span class="items-name">Headset</span>
+                            <span class="price">Min 50% Off</span>
+
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kqo3onk0/wall-clock/g/k/u/fancy-and-designer-wall-clock-for-home-offices-bedroom-living-original-imag4hyvahrggekr.jpeg?q=70" alt width="197px" height="200px">
+                            <span class="items-name">Wall Clocks</span>
+                            <span class="price">Min 50% Off</span>
+
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kz5vwy80/nut-dry-fruit/z/d/t/200-healthy-nutmix-mixed-dryfruits-source-of-vitamin-and-original-imagb8hwjgnutzpk.jpeg?q=70" alt width="135px" height="186px">
+                            <span class="items-name">Dry Fruits Gift
+                                Pack</span>
+                            <span class="price">Min 50% Off </span>
+
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/xif0q/tablet/d/d/n/-original-imaggp4gtdze4hfd.jpeg?q=70" alt width="157px" height="200px">
+                            <span class="items-name">Tablets</span>
+                            <span class="price">Min 40% Off</span>
+
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/l2rwzgw0/cycle/f/z/l/14-t-v-k-rocky-carrier-sky-blue-pvc-for-2-to-5-year-kids-14-13-original-imagefkgfytrvvkk.jpeg?q=70" alt width="200px" height="200px">
+                            <span class="items-name">Kids Cycles</span>
+                            <span class="price">Min 50% Off</span>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ads section 4 -->
+                <section class="ads-section2">
+                    <!-- left box -->
+                    <div class="left-side2">
+                        <p class="left-para">Home Decor& Furniture </p>
+                        <button class="left-btn">VIEW ALL</button>
+
+                    </div>
+                    <div class="middle-2">
+                        <button title="Power" class="right-arrow-2">
+                            <svg stroke="#000000" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg>
+                        </button>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/xif0q/shopsy-table-lamp/s/e/h/lamp-16-colour-rgb-changing-rose-crystal-diamond-table-lamp-original-imagkxhd2ne4vhfe.jpeg?q=70" alt width="195px" height="200px">
+                            <span class="items-name">Table Lamp</span>
+                            <span class="price">Up to 40% Off</span>
+
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/l5h2xe80/blanket/a/d/s/premium-superfine-soft-single-abstract-printed-fleece-polar-original-imagg59y3qyurppu.jpeg?q=70" alt width="197px" height="200px">
+                            <span class="items-name">Blanket</span>
+                            <span class="price">Min 50% Off</span>
+
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/xif0q/key-holder/r/1/e/8-printed-wh-radha-krishna-two-box-key-holder-khatu-crafts-original-imaghv7q37dtx9ff.jpeg?q=70" alt width="200px" height="186px">
+                            <span class="items-name">Key Holders</span>
+                            <span class="price">Min 50% Off </span>
+
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kjabs7k0-0/wall-clock/a/g/e/handpainted-peacock-wall-clock-wc-331-analog-divinecrafts-original-imafyvmxgyhdyefg.jpeg?q=70" alt width="157px" height="200px">
+                            <span class="items-name">Wall Clock</span>
+                            <span class="price">Min 50% Off</span>
+
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kxrvi4w0/carpet-rug/o/h/4/45-60-artificial-green-grass-floor-mat-habitat-original-imaga5kjwshy5adz.jpeg?q=70" alt width="200px" height="200px">
+                            <span class="items-name">Atrificial Grass</span>
+                            <span class="price">Min 50% Off</span>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- ads section 5 -->
+                <section class="ads-section2">
+                    <!-- left box -->
+                    <div class="left-side2">
+                        <p class="left-para">Sports Healthcare& Furniture
+                        </p>
+                        <button class="left-btn">VIEW ALL</button>
+                        <div class="left-img">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90" alt width="230px">
+                        </div>
+
+                    </div>
+                    <div class="middle-2">
+                        <button title="btn" class="right-arrow-2">
+                            <svg stroke="#000000" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg>
+                        </button>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=70" alt width="101px" height="200px">
+                            <span class="items-name">Electric Cycle</span>
+                            <span class="price">Up to 40% Off</span>
+                            <span class="brand">Nuze Motovolt and
+                                more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kkimfm80/tea/z/n/1/premium-pouch-regular-tea-powder-tata-original-imafzuf2mnubzphd.jpeg?q=70" alt width="124px" height="200px">
+                            <span class="items-name">Top Selling
+                                Stationery</span>
+                            <span class="price">From ₹49</span>
+                            <span class="brand">Pens, Notebook& more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/jc0ttow0/vehicle-lubricant/5/h/q/1-3000-4t-plus-20w40-hc-tech-engine-oil-for-bikes-motul-original-imaff8z4xtq5ry6a.jpeg?q=70" alt width="115px" height="200px">
+                            <span class="items-name">Remote Control
+                                Toys</span>
+                            <span class="price">Up to 80% Off </span>
+                            <span class="brand">Buy Now!</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kiqbma80-0/musical-toy/s/k/b/xylophone-guitar-wooden-kids-first-musical-sound-instrument-toy-original-imafyfszcjkjcwwz.jpeg?q=70" alt width="157px" height="200px">
+                            <span class="items-name">Tricycles&
+                                Rideons</span>
+                            <span class="price">Up to 70% Off</span>
+                            <span class="brand">Figurines, Battle Toys &
+                                more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/kl5hh8w0/puzzle/g/n/g/60-wooden-earth-jigsaw-puzzle-60-pcs-webby-original-imagyc8hsdztzdzb.jpeg?q=70" alt width="200px" height="200px">
+                            <span class="items-name">Monitor</span>
+                            <span class="price">From ₹9999</span>
+                            <span class="brand">Samsung, LG...</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- ads section 6 -->
+                <section class="ads-section2">
+                    <!-- left box -->
+                    <div class="left-side2">
+                        <p class="left-para">Health& Wellness </p>
+                        <button class="left-btn">VIEW ALL</button>
+
+                    </div>
+                    <div class="middle-2">
+                        <button title="button" class="right-arrow-2">
+                            <svg stroke="#000000" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg>
+                        </button>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/xif0q/fitness-grip/b/d/n/adjustable-spring-hand-exerciser-finger-exerciser-hand-grip-original-imagg8phpmjazvgj.jpeg?q=70" alt width="195px" height="200px">
+                            <span class="items-name">Electric Cycle</span>
+                            <span class="price">Up to 40% Off</span>
+                            <span class="brand">Nuze Motovolt and
+                                more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/xif0q/nut-dry-fruit/s/y/c/750-dry-fruits-combo-pack-of-healthy-5-kaju-pista-badam-akhrot-original-imaghdtzbgmvhtqg.jpeg?q=70" alt width="114px" height="200px">
+                            <span class="items-name">Top Selling
+                                Stationery</span>
+                            <span class="price">From ₹49</span>
+                            <span class="brand">Pens, Notebook& more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/xif0q/protein-supplement/2/p/p/whey-protein-essential-whey-protein-24g-protein-with-digestive-original-imaggz55ag8e3p7c.jpeg?q=70" alt width="114px" height="200px">
+                            <span class="items-name">Remote Control
+                                Toys</span>
+                            <span class="price">Up to 80% Off </span>
+                            <span class="brand">Buy Now!</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/khtghow0-0/vitamin-supplement/a/j/c/50-vitamin-e-pack-of-50-capsules-face-hair-pimple-glowing-skin-original-imafxqttfpqsazf3.jpeg?q=70" alt width="157px" height="200px">
+                            <span class="items-name">Tricycles&
+                                Rideons</span>
+                            <span class="price">Up to 70% Off</span>
+                            <span class="brand">Figurines, Battle Toys &
+                                more</span>
+                        </div>
+                        <div class="items-2">
+                            <img class="image" src="https://rukminim2.flixcart.com/image/200/200/ky0g58w0/racquet/v/s/f/g4-3-25-inches-double-shaft-badminton-racket-set-of-2-strung-2-original-imagac5hgwzfwrk2.jpeg?q=70" alt width="200px" height="200px">
+                            <span class="items-name">Monitor</span>
+                            <span class="price">From ₹9999</span>
+                            <span class="brand">Samsung, LG...</span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer-section">
+            <div class="footer-content">
+                <div class="links">
+                    <h4 class="about">ABOUT</h4>
+                    <a class="first-link-section first-link plus-content " href="#" target="_blank">Contact Us</a>
+                    <a class="first-link-section plus-content" href="#">About
+                        Us</a>
+                    <a class="first-link-section plus-content" href="#">Careers</a>
+                    <a class="first-link-section plus-content" href="#">Flipkart
+                        Stories</a>
+                    <a class="first-link-section plus-content" href="#">Press</a>
+                    <a class="first-link-section plus-content" href="#">Flipkart
+                        Wholesales</a>
+                    <a class="first-link-section plus-content" href="#">Cleartrip</a>
+                    <a class="first-link-section plus-content" href="#">Corporate
+                        Information</a>
+                </div>
+
+                <div class="links">
+                    <h4>HELP</h4>
+                    <a class="first-link" href="#">Payments</a>
+                    <a class="plus-content" href="#">Shipping</a>
+                    <a class="plus-content" href="#">Cancellation&
+                        Returns</a>
+                    <a class="plus-content" href="#">FAQ</a>
+                    <a class="plus-content" href="#">Report Infringement</a>
+                </div>
+
+                <div class="links">
+
+                    <h4>CUSTOMER POLICY</h4>
+                    <a class="first-link plus-content" href="#">Cancellation& Returns</a>
+                    <a class="plus-content" href="#">Terms of Use</a>
+                    <a class="plus-content" href="#">Security</a>
+                    <a class="plus-content" href="#">Privacy</a>
+                    <a class="plus-content" href="#">Sitemap</a>
+                    <a class="plus-content" href="#">Grievience
+                        Redressal</a>
+                    <a class="plus-content" href="#">EPR Compliance</a>
+                </div>
+
+                <div class="links">
+                    <h4>SOCIAL</h4>
+                    <a class="first-link plus-content" href="https://www.facebook.com/flipkart">
+                        <i class="fa-brands fa-facebook"> Facebook</i>
+                    </a>
+                    <a class="plus-content" href="https://www.twitter.com/flikart">
+                        <i class="fa-brands fa-twitter"> Twitter</i>
+                    </a>
+                    <a class="plus-content" href="https://www.youtube.com/flipkart">
+                        <i class="fa-brands fa-youtube">Youtube</i>
+                    </a>
+                </div>
+
+                <div class="vertical-line">
+
+                    <div class="email-section">
+                        <span class="mail">Mail Us:</span>
+                        <p>Flipkart Internet Private Limited, Buildings Alyssa, Begonia& Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</p>
+                    </div>
+
+                </div>
+
+                <div class="address-section links">
+                    <span class="address"> Registered Office Address:</span>
+                    <p class="address-para">Flipkart Internet Private Limited, Buildings Alyssa, Begonia& Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India CIN : U51109KA2012PTC066107 Telephone: <span class="contact-no">044-45614700</span></p>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
